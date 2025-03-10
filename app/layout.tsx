@@ -1,5 +1,8 @@
+"use client"
+
 import type { Metadata } from 'next'
 import './globals.css'
+import AnimatedCursor from "@/components/animated-cursor"
 
 export const metadata: Metadata = {
   title: 'v0 App',
@@ -14,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AnimatedCursor />
+        {children}
+      </body>
     </html>
   )
 }

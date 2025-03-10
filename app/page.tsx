@@ -6,7 +6,6 @@ import { ArrowRight, Play, Youtube } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import AnimatedCursor from "@/components/animated-cursor"
 import HeroBackground from "@/components/hero-background"
 import CharacterCard from "@/components/character-card"
 import AnimationCard from "@/components/animation-card"
@@ -15,8 +14,6 @@ import YoutubeEmbed from "@/components/youtube-embed"
 export default function HomePage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-      <AnimatedCursor />
-
       {/* Hero Section */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden">
         <HeroBackground />
