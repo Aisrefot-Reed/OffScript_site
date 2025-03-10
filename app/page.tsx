@@ -25,7 +25,7 @@ export default function HomePage() {
           <p className="mb-8 max-w-md text-xl text-muted-foreground md:text-2xl">Animation that breaks the rules</p>
           <Button
             size="lg"
-            className="group"
+            className="group bg-black text-white hover:bg-black/90"
             onClick={() => {
               document.getElementById("animations")?.scrollIntoView({ behavior: "smooth" })
             }}

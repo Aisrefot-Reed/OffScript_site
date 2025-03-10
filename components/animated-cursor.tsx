@@ -62,7 +62,8 @@ export default function AnimatedCursor() {
     height: `${cursorSize}px`,
     borderWidth: clicked ? "2px" : "1px",
     opacity: hidden ? 0 : 1,
-    backgroundColor: linkHovered ? "rgba(64, 224, 208, 0.2)" : "transparent",
+    backgroundColor: linkHovered ? "rgba(0, 0, 0, 0.2)" : "transparent",
+    borderColor: "black",
     transform: `translate(-50%, -50%) scale(${clicked ? 0.8 : 1})`,
   }
 
@@ -76,7 +77,7 @@ export default function AnimatedCursor() {
           cursor: none;
         }
       `}</style>
-      <div className="pointer-events-none fixed z-50 rounded-full border border-primary" style={cursorStyle} />
+      <div className="pointer-events-none fixed z-50 rounded-full border" style={cursorStyle} />
     </>
   )
 }
